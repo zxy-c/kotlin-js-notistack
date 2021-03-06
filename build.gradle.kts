@@ -55,7 +55,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             groupId = groupId
-            artifactId = "material-ui-kotlin-react-pickers"
+            artifactId = "kotlin-js-notistack"
             version = version
 
             from(components["kotlin"])

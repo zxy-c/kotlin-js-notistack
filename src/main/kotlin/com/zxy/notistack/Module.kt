@@ -13,10 +13,19 @@ external interface SnackbarProviderProps : RProps {
     var maxSnack: Number
 }
 
-@JsName("useSnackbar")
-external fun useSnackbarRaw(): UseSnackbarObject
+external fun useSnackbar(): UseSnackbarObject
 
 external interface UseSnackbarObject {
-    val enqueueSnackbar: EnqueueSnackbar
+    val enqueueSnackbar: (message: String, options: SnackbarOptions) -> Unit
+}
+
+external interface SnackbarOptions {
+    var anchorOrigin: Origin?
+    var variant: String
+}
+
+external interface Origin {
+    var vertical: String
+    var horizontal: String
 }
 
