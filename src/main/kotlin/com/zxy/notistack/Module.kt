@@ -13,9 +13,9 @@ external interface SnackbarProviderProps : RProps {
     var maxSnack: Number
 }
 
-external fun useSnackbar(): UseSnackbarObject
+external fun useSnackbar(): SnackbarManager
 
-external interface UseSnackbarObject {
+external interface SnackbarManager {
     val enqueueSnackbar: (message: String, options: SnackbarOptions) -> Unit
 }
 
