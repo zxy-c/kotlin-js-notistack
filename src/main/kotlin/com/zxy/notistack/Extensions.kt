@@ -27,7 +27,7 @@ fun SnackbarManager.enqueueSnackbar(
 
 @Suppress("EnumEntryName")
 enum class SnackbarVariant {
-    succcess,
+    success,
     error,
     default,
     warning,
